@@ -1,0 +1,435 @@
+@font-face {
+  font-family: "Garamond";
+  src: url("fonts/garamond/Garamond - Garamond - Regular.ttf");
+}
+@font-face {
+  font-family: "GaramondBold";
+  src: url("fonts/garamond/Garamond-Bold - Garamond - Bold.ttf");
+}
+
+body {
+  font-family: "Garamond";
+  background: #ace1f3;
+}
+.mainpage {
+  border-radius: 6px;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+.favorites {
+  position: relative;
+}
+.favorites-label {
+  position: absolute;
+  border-radius: 20px;
+  top: -4px;
+  right: 0px;
+}
+.favorites-label-busket {
+  position: absolute;
+  border-radius: 20px;
+  top: 18px;
+  right: 8px;
+}
+.logoandsearch {
+  display: flex;
+  flex-direction: row;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-radius: 8px;
+  margin: 10px 0px;
+  padding: 8px;
+  background-color: white;
+}
+.logosearch {
+  display: flex;
+
+  align-items: center;
+
+  top: 0;
+  border-radius: 8px;
+  margin: 10px 0px;
+  padding: 8px;
+  background-color: white;
+}
+nav {
+  margin: 10px;
+}
+svg {
+  margin: 8px;
+}
+.bannerscroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.headimage {
+  min-width: fit-content;
+  height: auto;
+
+  border-radius: 8px;
+  scroll-snap-align: start;
+}
+.banerimage {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.iserUlements {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cards {
+  padding-top: 10px;
+  padding-left: 26px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  margin: 8px;
+}
+
+.coverType {
+  font-size: 14px;
+}
+.picture {
+  cursor: pointer;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.author {
+  color: gray;
+  font-size: 14px;
+}
+.reacts {
+  display: flex;
+  flex-direction: row;
+
+  gap: 3px;
+}
+.busket {
+  flex-grow: 2;
+  background-color: #ace1f3;
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+.busket:hover {
+  background-color: #84c9de;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logoword {
+  height: auto;
+  width: 150px;
+  margin: 8px;
+  font-family: "Garamond";
+  font-size: 26px;
+  font-weight: bolder;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  cursor: pointer;
+  transition-delay: 5ms;
+  transition:
+    visibility 0.5s,
+    opacity 0.5s;
+}
+.alterlogo {
+  position: absolute;
+  font-size: 16px;
+  font-family: "Garamond";
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  z-index: 3;
+  opacity: 0;
+  transition-delay: 5ms;
+  transition:
+    visibility 0.5s,
+    opacity 0.5s;
+}
+.logo:hover .alterlogo {
+  visibility: visible;
+  opacity: 1;
+}
+.logo:hover .logoword {
+  opacity: 0;
+}
+.catalog {
+  margin: 0 10px 0 25px;
+  background-color: white;
+  color: #d3262f;
+  border: 1px solid #d3262f;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: "Garamond";
+  font-size: 20px;
+  font-weight: bolder;
+  height: 100%;
+  margin-right: 18px;
+  padding: 10px;
+}
+.catalog:hover {
+  background-color: #d3262f;
+  border: #d3262f;
+  color: white;
+}
+.order {
+  background-color: #d3262f;
+  border: #d3262f;
+  color: white;
+  border-radius: 8px;
+}
+.loop {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  padding: 9px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 6px;
+  border-right: 0;
+
+  border: 1px solid #747576;
+  border-radius: 3px;
+}
+.footer {
+  background-color: black;
+  color: white;
+  border-radius: 0 0 8px 8px;
+
+  padding: 20px;
+}
+
+.searchinstrument {
+  display: flex;
+  margin-top: 8px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.like {
+  background-color: #d3262f;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.img {
+  text-align: center;
+}
+.stroke {
+  flex-grow: 1;
+  padding: 16px;
+  padding-right: 300px;
+  border: none;
+  font-size: 16px;
+  font-family: "Garamond";
+
+  width: 1%;
+  text-align: start;
+  margin: 1px;
+}
+.stroke:focus {
+  outline: none;
+}
+
+.burger-menu {
+  position: absolute;
+  visibility: hidden;
+}
+.book-info {
+  width: 150px;
+  align-items: center;
+  line-height: 1.5px;
+}
+.title {
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: 1.2;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+.title:hover {
+  color: #d3262f;
+}
+.book-modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  padding: 20;
+}
+.modalContent {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  margin: 10px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.fullbookinfo {
+  display: flex;
+  align-content: center;
+  background-color: white;
+}
+
+.information {
+  margin: 20px;
+  padding: 4px;
+}
+.series-card {
+  margin: 10px;
+  margin-left: 1px;
+
+  margin-right: 1px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px;
+}
+.watchall {
+  background-color: white;
+  padding: 1vw 1vh;
+  font-size: 18px;
+  font-family: "GaramondBold";
+
+  margin: 0 0 10px 0;
+  border: none;
+  cursor: pointer;
+}
+.watchall:hover {
+  color: #d3262f;
+}
+.head-series-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 3px;
+}
+
+.none-seriescard {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 8px;
+
+  background-color: white;
+}
+.busketspace {
+  border-radius: 8px;
+  background-color: white;
+  margin: 3px;
+}
+.cheklist {
+  border-radius: 8px;
+  margin: 10px;
+  background-color: #98b2f0;
+}
+.score {
+  margin: 10px;
+  background-color: white;
+  font-size: 18px;
+  border-radius: 8px;
+}
+.GlobalSearch {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.search-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-radius: 8px;
+  background-color: white;
+  padding: 16px;
+}
+.succsessWindow {
+  padding: 10px;
+  background-color: white;
+}
+.succsessWindow h4 {
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+
+  margin-right: 10px;
+  height: fit-content;
+}
+.filter {
+  background-color: white;
+  border-radius: 8px;
+  margin: 4px;
+  padding: 4px;
+}
+.filter h4 {
+  margin: 0;
+  padding: 10px;
+}
+.filter div {
+  padding: 3px;
+}
+.likescount {
+  border-radius: 12px;
+  background-color: aqua;
+
+  width: 10px;
+  height: 10px;
+}
+.filters {
+  height: fit-content;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
